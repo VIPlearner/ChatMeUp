@@ -18,7 +18,7 @@ Model-View-ViewModel (MVVM)
 * Storage
 
 #### Architecture Components
-[ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel), [LiveData](https://developer.android.com/topic/libraries/architecture/livedata), [DataBinding](https://developer.android.com/topic/libraries/data-binding), 
+[ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel), [LiveData](https://developer.android.com/topic/libraries/architecture/livedata), [Jetpack Compose](https://developer.android.com/jetpack/compose?gclid=Cj0KCQjwwISlBhD6ARIsAESAmp5eTKsRAVvdgIBFEu7ACiZM2ll6nRF8xwqCxuIIF55zxosP71k_T1QaAj21EALw_wcB&gclsrc=aw.ds) , 
 [Navigation](https://developer.android.com/guide/navigation/)
 
 ## Features
@@ -31,11 +31,9 @@ Model-View-ViewModel (MVVM)
 
 **Users:** List of users
 
-**Settings:** Change image, change status, logout
+**Edit Profile:** Change image, change status, Change name
 
 **Chat:** Send and show messages sorted by timestamp, online status, custom toolbar, update on change
-
-**Profile:** Add/remove friend, accept/decline friend request
 
 **General:** Auto login, bottom navigation, error messages with snackbar, progress bar
 
