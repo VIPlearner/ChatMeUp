@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="zero">%d إشعار جديد</item>
+    <item quantity="one">إشعار جديد واحد (%d)</item>
+    <item quantity="two">إشعاران جديدان (%d)</item>
+    <item quantity="few">%d إشعارات جديدة</item>
+    <item quantity="many">%d إشعارًا جديدًا</item>
+    <item quantity="other">%d إشعار جديد</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"التوجه إلى المنزل"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"التنقل إلى أعلى"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"خيارات أكثر"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"تم"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"عرض الكل"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"اختيار تطبيق"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"إيقاف"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"مفعّلة"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"حذف"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"فضاء"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"القائمة+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"بحث…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"محو طلب البحث"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"طلب بحث"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"البحث"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"إرسال طلب البحث"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"بحث صوتي"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"مشاركة مع"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"مشاركة مع <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"تصغير"</string>
+    <string name="afganistan_hint" translatable="false">70 123 4567</string>
+    <string name="afghanistan">أفغانستان</string>
+    <string name="aland_islands">جزر أولند</string>
+    <string name="aland_islands_hint" translatable="false">41 2345678</string>
+    <string name="albania">ألبانيا</string>
+    <string name="albania_hint" translatable="false">67 212 3456</string>
+    <string name="algeria">الجزائر</string>
+    <string name="algeria_hint" translatable="false">551 23 45 67</string>
+    <string name="american_samoa">ساموا-الأمريكي</string>
+    <string name="american_samoa_hint" translatable="false">684-733-1234</string>
+    <string name="andora">أندورا</string>
+    <string name="andorra">أندورا</string>
+    <string name="andorra_hint" translatable="false">312 345</string>
+    <string name="angola">أنجولا</string>
+    <string name="angola_hint" translatable="false">923 123 456</string>
+    <string name="anguilla">أنجويلا</string>
+    <string name="anguilla_hint" translatable="false">(264) 123-1234</string>
+    <string name="antarctica">المنطقة القطبية الجنوبية</string>
+    <string name="antarctica_hint" translatable="false">xxx xxx</string>
+    <string name="antigua_and_barbuda">أنتيغوا وباربودا</string>
+    <string name="antigua_and_barbuda_hint" translatable="false">268-464-1234</string>
+    <string name="argentina">الأرجنتين</string>
+    <string name="argentina_hint" translatable="false">9 11 2345-6789</string>
+    <string name="armenia">أرمينيا</string>
+    <string name="armenia_hint" translatable="false">77 123456</string>
+    <string name="aruba">أروبا</string>
+    <string name="aruba_hint" translatable="false">560 1234</string>
+    <string name="australia">أستراليا</string>
+    <string name="australia_hint" translatable="false">412 345 678</string>
+    <string name="austria">النمسا</string>
+    <string name="austria_hint" translatable="false">664 123456</string>
+    <string name="azerbaijan">أذربيجان</string>
+    <string name="azerbaijan_hint" translatable="false">40 123 45 67</string>
+    <string name="bahamas">باهاماس</string>
+    <string name="bahamas_hint" translatable="false">242-359-1234</string>
+    <string name="bahrain">البحرين</string>
+    <string name="bahrain_hint" translatable="false">3600 1234</string>
+    <string name="bangladesh">بنجلاديش</string>
+    <string name="bangladesh_hint" translatable="false">1812-345678</string>
+    <string name="barbados">باربادوس</string>
+    <string name="barbados_hint" translatable="false">246-250-1234</string>
+    <string name="belarus">بيلاروس</string>
+    <string name="belarus_hint" translatable="false">29 491-19-11</string>
+    <string name="belgium">بلجيكا</string>
+    <string name="belgium_hint" translatable="false">470 12 34 56</string>
+    <string name="belize">بيليز</string>
+    <string name="belize_hint" translatable="false">622-1234</string>
+    <string name="benin">بنين</string>
+    <string name="benin_hint" translatable="false">90 01 12 34</string>
+    <string name="bermuda">برمودا</string>
+    <string name="bermuda_hint" translatable="false">441-370-1234</string>
+    <string name="bhutan">بوتان</string>
+    <string name="bhutan_hint" translatable="false">17 12 34 56</string>
+    <string name="bolivia">بوليفيا</string>
+    <string name="bolivia_hint" translatable="false">71234567</string>
+    <string name="bosnia">البوسنة والهرسك</string>
+    <string name="bosnia_hint" translatable="false">61 123 456</string>
+    <string name="botswana">بوتسوانا</string>
+    <string name="botswana_hint" translatable="false">71 123 456</string>
+    <string msgid="6128938260108474660" name="bottom_sheet_collapse_description">"تصغير البطاقة السفلية"</string>
+    <string msgid="1918297411568599192" name="bottom_sheet_dismiss_description">"إغلاق البطاقة السفلية"</string>
+    <string msgid="7772321844937772780" name="bottom_sheet_drag_handle_description">"مقبض السحب"</string>
+    <string msgid="4324434199045499117" name="bottom_sheet_expand_description">"توسيع البطاقة السفلية"</string>
+    <string name="bottomsheet_action_expand_halfway">توسيع البطاقة السفلية</string>
+    <string name="brazil">البرازيل</string>
+    <string name="brazil_hint" translatable="false">11 96123-4567</string>
+    <string name="british_indian_ocean">إقليم المحيط البريطاني الهندي</string>
+    <string name="brunei_darussalam">بروناي</string>
+    <string name="brunei_darussalam_hint" translatable="false">712 3456</string>
+    <string name="bulgaria">بلغاريا</string>
+    <string name="bulgaria_hint" translatable="false">48 123 456</string>
+    <string name="burkina_faso">بوركينا فاسو</string>
+    <string name="burkina_faso_hint" translatable="false">70 12 34 56</string>
+    <string name="burundi">بوروندي</string>
+    <string name="burundi_hint" translatable="false">29 12 34 56</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"ردّ"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"فيديو"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"رفض"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"قطع الاتصال"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"مكالمة واردة"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"مكالمة جارية"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"يتم فحص المكالمة الواردة"</string>
+    <string name="cambodia">كمبوديا</string>
+    <string name="cambodia_hint" translatable="false">91 234 567</string>
+    <string name="cameroon">كاميرون</string>
+    <string name="cameroon_hint" translatable="false">6 71 23 45 67</string>
+    <string name="canada">كندا</string>
+    <string name="canada_hint" translatable="false">506-234-5678</string>
+    <string name="cape_verde">الرأس الأخضر</string>
+    <string name="cape_verde_hint" translatable="false">991 12 34</string>
+    <string name="cayman_islands">جزر كايمان</string>
+    <string name="cayman_islands_hint" translatable="false">345-323-1234</string>
+    <string name="central_african">جمهورية أفريقيا الوسطى</string>
+    <string name="central_african_hint" translatable="false">70 01 23 45</string>
+    <string name="chad">تشاد</string>
+    <string name="chad_hint" translatable="false">63 01 23 45</string>
+    <string name="character_counter_content_description">تمّ إدخال %1$d حرف من إجمالي %2$d.</string>
+    <string name="character_counter_overflowed_content_description">تجاوز عدد الأحرف المسموح به %1$d من %2$d.</string>
+    <string name="chile">تشيلي</string>
+    <string name="chile_hint" translatable="false">2 2123 4567</string>
+    <string name="china">الصين</string>
+    <string name="china_hint" translatable="false">131 2345 6789</string>
+    <string name="christmas_island">جزيرة كريسماس</string>
+    <string name="christmas_island_hint" translatable="false">412 345 678</string>
+    <string name="clear_text_end_icon_content_description">محو النص</string>
+    <string msgid="406453423630273620" name="close_drawer">"إغلاق قائمة التنقل"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"إغلاق الورقة"</string>
+    <string name="cocos">جزر كوكس(كيلينغ)</string>
+    <string name="cocos_hint" translatable="false">412 345 678</string>
+    <string msgid="5389587048670450460" name="collapsed">"مصغَّر"</string>
+    <string name="colombia">كولومبيا</string>
+    <string name="colombia_hint" translatable="false">321 1234567</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">تفعيل</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">‏لن يعمل %1$s ما لم يتم تفعيل خدمات Google Play.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">‏تفعيل خدمات Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">تثبيت</string>
+    <string name="common_google_play_services_install_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play، والتي لا تتوفر على جهازك.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">‏الحصول على خدمات Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">‏مدى توفّر خدمات Google Play</string>
+    <string name="common_google_play_services_notification_ticker">‏خطأ في خدمات Google Play</string>
+    <string name="common_google_play_services_unknown_issue">‏لدى %1$s مشكلة في خدمات Google Play. يُرجى إعادة المحاولة.</string>
+    <string name="common_google_play_services_unsupported_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play التي لا يوفرها جهازك.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">تحديث</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">‏لن يتم تشغيل %1$s ما لم يتم تحديث خدمات Google Play.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">‏تحديث خدمات Google Play</string>
+    <string name="common_google_play_services_updating_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play، والتي يتم تحديثها حاليًا.</string>
+    <string name="common_google_play_services_wear_update_text">‏يجب توفر إصدار جديد من خدمات Google Play. سيتم تحديثها تلقائيًا قريبًا.</string>
+    <string name="common_open_on_phone">فتح على الهاتف</string>
+    <string name="common_signin_button_text">تسجل الدخول</string>
+    <string name="common_signin_button_text_long">‏تسجيل الدخول عبر Google</string>
+    <string name="comoros">جزر القمر</string>
+    <string name="comoros_hint" translatable="false">321 23 45</string>
+    <string name="congo">جمهورية الكونغو</string>
+    <string name="congo_democratic">جمهورية الكونغو الديمقراطية</string>
+    <string name="congo_democratic_hint" translatable="false">991 234 567</string>
+    <string name="congo_hint" translatable="false">61234567</string>
+    <string name="cook_islands">جزر كوك</string>
+    <string name="cook_islands_hint" translatable="false">71 234</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"تم نسخ الرابط إلى الحافظة."</string>
+    <string name="costa_rica">كوستاريكا</string>
+    <string name="costa_rica_hint" translatable="false">8312 3456</string>
+    <string name="cote_dlvoire">ساحل العاج</string>
+    <string name="cote_dlvoire_hint" translatable="false">02 12 34 56</string>
+    <string name="croatia">كرواتيا</string>
+    <string name="croatia_hint" translatable="false">92 123 4567</string>
+    <string name="cuba">كوبا</string>
+    <string name="cuba_hint" translatable="false">5 1234567</string>
+    <string name="curacao">Curaçao</string>
+    <string name="curacao_hint" translatable="false">9 518 1234</string>
+    <string name="cyprus">قبرص</string>
+    <string name="cyprus_hint" translatable="false">96 123456</string>
+    <string name="czech_republic">التشيك</string>
+    <string name="czech_republic_hint" translatable="false">601 123 456</string>
+    <string msgid="3499643850558715142" name="date_input_headline">"التاريخ الذي تم إدخاله"</string>
+    <string msgid="8562356184193964298" name="date_input_headline_description">"‏التاريخ الذي تم إدخاله: ‎%1$s"</string>
+    <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"‏لا يتوافق التاريخ مع النمط المتوقَّع: ‎%1$s"</string>
+    <string msgid="6114792992433444995" name="date_input_invalid_not_allowed">"‏التاريخ غير مسموح به: ‎%1$s"</string>
+    <string msgid="8434112129235255568" name="date_input_invalid_year_range">"‏التاريخ خارج نطاق الأعوام المتوقَّع: ‎%1$s - %2$s"</string>
+    <string msgid="5194825853981987218" name="date_input_label">"التاريخ"</string>
+    <string msgid="5722931102250207748" name="date_input_no_input_description">"بدون تاريخ"</string>
+    <string msgid="3010396677286327048" name="date_input_title">"اختيار تاريخ"</string>
+    <string msgid="2846784065735639969" name="date_picker_headline">"التاريخ المحدَّد"</string>
+    <string msgid="4627306862713137085" name="date_picker_headline_description">"‏التحديد الحالي: %1$s"</string>
+    <string msgid="5152441868029453612" name="date_picker_navigate_to_year_description">"‏الانتقال إلى عام %1$s"</string>
+    <string msgid="5724377114289981899" name="date_picker_no_selection_description">"بدون تاريخ"</string>
+    <string msgid="8911933542023210271" name="date_picker_scroll_to_earlier_years">"انتقِل للأسفل/للأعلى لإظهار السنوات السابقة."</string>
+    <string msgid="3226341140390493774" name="date_picker_scroll_to_later_years">"انتقِل للأسفل/للأعلى لإظهار السنوات التالية."</string>
+    <string msgid="9029369254443419167" name="date_picker_switch_to_calendar_mode">"التبديل إلى وضع \"الإدخال في التقويم\""</string>
+    <string msgid="145089358343568971" name="date_picker_switch_to_day_selection">"مرِّر سريعًا لتحديد عام، أو انقر للرجوع إلى تحديد يوم."</string>
+    <string msgid="1496750567914156598" name="date_picker_switch_to_input_mode">"التبديل إلى وضع \"إدخال النص\""</string>
+    <string msgid="8313783187901412102" name="date_picker_switch_to_next_month">"التغيير إلى الشهر التالي"</string>
+    <string msgid="7596294429748914881" name="date_picker_switch_to_previous_month">"التغيير إلى الشهر السابق"</string>
+    <string msgid="3412370019845183965" name="date_picker_switch_to_year_selection">"التبديل لاختيار سنة"</string>
+    <string msgid="9208721003668059792" name="date_picker_title">"اختيار تاريخ"</string>
+    <string msgid="4775802721403526937" name="date_picker_today_description">"اليوم"</string>
+    <string msgid="8140324713311804736" name="date_picker_year_picker_pane_title">"أداة اختيار الأعوام مرئية"</string>
+    <string msgid="1891592555781755601" name="date_range_input_invalid_range_input">"إدخال نطاق زمني غير صالح"</string>
+    <string msgid="2366412111888449406" name="date_range_input_title">"إدخال التواريخ"</string>
+    <string msgid="9048690781645835833" name="date_range_picker_day_in_range">"في النطاق"</string>
+    <string msgid="4766270708882012148" name="date_range_picker_end_headline">"تاريخ الانتهاء"</string>
+    <string msgid="51495506931835470" name="date_range_picker_scroll_to_next_month">"انتقِل للأسفل/للأعلى لإظهار الشهر التالي."</string>
+    <string msgid="4371570854614540700" name="date_range_picker_scroll_to_previous_month">"انتقِل للأسفل/للأعلى لإظهار الشهر السابق."</string>
+    <string msgid="5759491386723090559" name="date_range_picker_start_headline">"تاريخ البدء"</string>
+    <string msgid="690080476639943577" name="date_range_picker_title">"اختيار التواريخ"</string>
+    <string msgid="8038256446254964252" name="default_error_message">"إدخال غير صالح"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"نافذة منبثقة"</string>
+    <string name="denmark">الدنمارك</string>
+    <string name="denmark_hint" translatable="false">32 12 34 56</string>
+    <string msgid="4057925834421392736" name="dialog">"مربّع حوار"</string>
+    <string name="djibouti">جيبوتي</string>
+    <string name="djibouti_hint" translatable="false">77 83 10 01</string>
+    <string name="dominica">دومينيكا</string>
+    <string name="dominica_hint" translatable="false">767-225-1234</string>
+    <string name="dominician_republic">جمهورية الدومينيكان</string>
+    <string name="dominician_republic_hint" translatable="false">809-234-5678</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"قائمة منسدلة"</string>
+    <string name="ecuador">الإكوادور</string>
+    <string name="ecuador_hint" translatable="false">99 123 4567</string>
+    <string name="egypt">مصر</string>
+    <string name="egypt_hint" translatable="false">100 123 4567</string>
+    <string name="el_salvador">السلفادور</string>
+    <string name="el_salvador_hint" translatable="false">7012 3456</string>
+    <string name="equatorial_guinea">غينيا الاستوائية</string>
+    <string name="equatorial_guinea_hint" translatable="false">222 123 456</string>
+    <string name="eritrea">إريتريا</string>
+    <string name="eritrea_hint" translatable="false">7 123 456</string>
+    <string name="error_icon_content_description">خطأ</string>
+    <string name="estonia">إستونيا</string>
+    <string name="estonia_hint" translatable="false">5123 4567</string>
+    <string name="ethiopia">إثيوبيا</string>
+    <string name="ethiopia_hint" translatable="false">91 123 4567</string>
+    <string msgid="5974471714631304645" name="expanded">"موسَّع"</string>
+    <string name="exposed_dropdown_menu_content_description">عرض القائمة المنسدلة</string>
+    <string name="falkland_islands">جزر فوكلاند</string>
+    <string name="falkland_islands_hint" translatable="false">51234</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"نسخ الرابط"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"فتح في المتصفح"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"مشاركة الرابط"</string>
+    <string name="faroe_islands">جزر فارو</string>
+    <string name="faroe_islands_hint" translatable="false">211234</string>
+    <string name="fiji">فيجي</string>
+    <string name="fiji_hint" translatable="false">665 1234</string>
+    <string name="finland">فنلندا</string>
+    <string name="finland_hint" translatable="false">042 123456</string>
+    <string name="france">فرنسا</string>
+    <string name="france_hint" translatable="false">6 12 34 56 78</string>
+    <string name="french_guyana">غينيا الفرنسية</string>
+    <string name="french_guyana_hint" translatable="false">694 20 12 34</string>
+    <string name="french_polynesia">بولينيزيا الفرنسية</string>
+    <string name="french_polynesia_hint" translatable="false">87 12 34 56</string>
+    <string name="gabon">الغابون</string>
+    <string name="gabon_hint" translatable="false">6 03 12 34</string>
+    <string name="gambia">غامبيا</string>
+    <string name="gambia_hint" translatable="false">301 2345</string>
+    <string name="georgia">جورجيا</string>
+    <string name="georgia_hint" translatable="false">555 12 34 56</string>
+    <string name="germany">ألمانيا</string>
+    <string name="germany_hint" translatable="false">0171 123456</string>
+    <string name="ghana">غانا</string>
+    <string name="ghana_hint" translatable="false">23 123 4567</string>
+    <string name="gibraltar">جبل طارق</string>
+    <string name="greece">اليونان</string>
+    <string name="greece_hint" translatable="false">691 234 5678</string>
+    <string name="greenland">جرينلاند</string>
+    <string name="greenland_hint" translatable="false">22 12 34</string>
+    <string name="grenada">غرينادا</string>
+    <string name="grenada_hint" translatable="false">473-403-1234</string>
+    <string name="guadeloupe">غوادلوب</string>
+    <string name="guadeloupe_hint" translatable="false">690 00 12 34</string>
+    <string name="guam">غوام</string>
+    <string name="guam_hint" translatable="false">671-300-1234</string>
+    <string name="guatemala">غواتيمال</string>
+    <string name="guatemala_hint" translatable="false">5123 4567</string>
+    <string name="guernsey">غيرنزي</string>
+    <string name="guernsey_hint" translatable="false">7781 123456</string>
+    <string name="guinea">غينيا</string>
+    <string name="guinea_bissau">غينيا بيساو</string>
+    <string name="guinea_bissau_hint" translatable="false">955 012 345</string>
+    <string name="guinea_hint" translatable="false">601 12 34 56</string>
+    <string name="guyana">غيانا</string>
+    <string name="guyana_hint" translatable="false">609 1234</string>
+    <string name="haiti">هايتي</string>
+    <string name="haiti_hint" translatable="false">34 10 1234</string>
+    <string name="holy_see">الفاتيكان</string>
+    <string name="honduras">هندوراس</string>
+    <string name="honduras_hint" translatable="false">9123-4567</string>
+    <string name="hong_kong">هونغ كونغ</string>
+    <string name="hong_kong_hint" translatable="false">5123 4567</string>
+    <string name="hungary">المجر</string>
+    <string name="hungary_hint" translatable="false">20 123 4567</string>
+    <string name="iceland">أيسلندا</string>
+    <string name="icon_content_description">رمز مربع الحوار</string>
+    <string msgid="6827826412747255547" name="in_progress">"قيد التقدم"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"تم وضع علامة في المربّع بشكل جزئي"</string>
+    <string name="india">الهند</string>
+    <string name="india_hint" translatable="false">241 123 5</string>
+    <string name="indonesia">إندونيسيا</string>
+    <string name="indonesia_hint" translatable="false">21 8379 6236</string>
+    <string name="invalid_number">رقم الهاتف غير صحيح</string>
+    <string name="iran">إيران</string>
+    <string name="iran_hint" translatable="false">021 1234 5678</string>
+    <string name="iraq">العراق</string>
+    <string name="iraq_hint" translatable="false">0777 123 4567</string>
+    <string name="ireland">جمهورية أيرلندا</string>
+    <string name="ireland_hint" translatable="false">087 123 4567</string>
+    <string name="isle_of_man">جزيرة مان</string>
+    <string name="israil">إسرائيل</string>
+    <string name="israil_hint" translatable="false">03-123-4567</string>
+    <string name="italia">إيطاليا</string>
+    <string name="italia_hint" translatable="false">388 123 4567</string>
+    <string name="item_view_role_description">علامة تبويب</string>
+    <string name="jamaica">جامايكا</string>
+    <string name="jamaica_hint" translatable="false">(876) 123-4567</string>
+    <string name="japan">اليابان</string>
+    <string name="japan_hint" translatable="false">-1234-5678</string>
+    <string name="jersey">جيرسي</string>
+    <string name="jersey_hint" translatable="false">7797 712345</string>
+    <string name="jordan">الأردن</string>
+    <string name="jordan_hint" translatable="false">7 9012 3456</string>
+    <string name="kazakhstan">كازاخستان</string>
+    <string name="kazakhstan_hint" translatable="false">771 000 9998</string>
+    <string name="kenya">كينيا</string>
+    <string name="kenya_hint" translatable="false">712 123456</string>
+    <string name="kiribati">كيريباتي</string>
+    <string name="kosovo">كوسوفو</string>
+    <string name="kosovo_hint" translatable="false">43 201 234</string>
+    <string name="kuwait">الكويت</string>
+    <string name="kuwait_hint" translatable="false">500 12345</string>
+    <string name="kyrgyzstan">قيرغيزستان</string>
+    <string name="kyrgyzstan_hint" translatable="false">700 123 456</string>
+    <string name="laos">لاوس</string>
+    <string name="laos_hint" translatable="false">20 23 123 456</string>
+    <string name="latvia">لاتفيا</string>
+    <string name="latvia_hint" translatable="false">21 234 567</string>
+    <string name="lebanon">لبنان</string>
+    <string name="lebanon_hint" translatable="false">71 123 456</string>
+    <string name="lesotho">ليسوتو</string>
+    <string name="lesotho_hint" translatable="false">5012 3456</string>
+    <string name="liberia">ليبيريا</string>
+    <string name="liberia_hint" translatable="false">77 012 3456</string>
+    <string name="libya">ليبيا</string>
+    <string name="libya_hint" translatable="false">91-2345678</string>
+    <string name="liechtenstein">ليختنشتاين</string>
+    <string name="lithuania">ليتوانيا</string>
+    <string name="lithuania_hint" translatable="false">612 34567</string>
+    <string name="luxembourg">لوكسمبورغ</string>
+    <string name="luxembourg_hint" translatable="false">628 123 456</string>
+    <string name="macau">ماكاو</string>
+    <string name="macau_hint" translatable="false">6612 3456</string>
+    <string name="madagascar">مدغشقر</string>
+    <string name="madagascar_hint" translatable="false">32 12 345 67</string>
+    <string name="malawi">مالاوي</string>
+    <string name="malawi_hint" translatable="false">991 23 45 67</string>
+    <string name="malaysia">ماليزيا</string>
+    <string name="malaysia_hint" translatable="false">12-345 6789</string>
+    <string name="maldives">المالديف</string>
+    <string name="maldives_hint" translatable="false">771-2345</string>
+    <string name="mali">مالي</string>
+    <string name="mali_hint" translatable="false">65 01 23 45</string>
+    <string name="malta">مالطا</string>
+    <string name="malta_hint" translatable="false">9696 1234</string>
+    <string name="marocco">المغرب</string>
+    <string name="marocco_hint" translatable="false">650-123456</string>
+    <string name="marshall_islands">جزر مارشال</string>
+    <string name="marshall_islands_hint" translatable="false">235-1234</string>
+    <string name="martinique">مارتينيك</string>
+    <string name="martinique_hint" translatable="false">696 20 12 34</string>
+    <string name="material_clock_toggle_content_description">يُرجى اختيار صباحًا أو مساءً.</string>
+    <string name="material_hour_selection">تحديد الساعة</string>
+    <string name="material_hour_suffix">الساعة %1$s</string>
+    <string name="material_minute_selection">تحديد الدقائق</string>
+    <string name="material_minute_suffix">%1$s دقيقة</string>
+    <string name="material_timepicker_am">صباحًا</string>
+    <string name="material_timepicker_clock_mode_description">يُرجى التبديل إلى وضع الساعة لإدخال الوقت.</string>
+    <string name="material_timepicker_hour">الساعة</string>
+    <string name="material_timepicker_minute">دقيقة</string>
+    <string name="material_timepicker_pm">مساءً</string>
+    <string name="material_timepicker_select_time">اختيار الوقت</string>
+    <string name="material_timepicker_text_input_mode_description">يُرجى التبديل إلى وضع إدخال النص لإدخال الوقت.</string>
+    <string name="mauriatana">موريتانيا</string>
+    <string name="mauriatana_hint" translatable="false">22 12 34 56</string>
+    <string name="mauritius">موريشيوس</string>
+    <string name="mauritius_hint" translatable="false">5251 2345</string>
+    <string name="mayotte">مايوت</string>
+    <string name="mayotte_hint" translatable="false">639 01 23 45</string>
+    <string name="mexico">المكسيك</string>
+    <string name="mexico_hint" translatable="false">222 123 4567</string>
+    <string name="micro">ميكرونيسيا</string>
+    <string name="micro_hint" translatable="false">350 1234</string>
+    <string name="moldova">مولدوفا</string>
+    <string name="moldova_hint" translatable="false">621 12 345</string>
+    <string name="monaco">موناكو</string>
+    <string name="monaco_hint" translatable="false">6 12 34 56 78</string>
+    <string name="mongolia">منغوليا</string>
+    <string name="mongolia_hint" translatable="false">8812 3456</string>
+    <string name="montenegro">الجبل الأسو</string>
+    <string name="montenegro_hint" translatable="false">67 622 901</string>
+    <string name="montserrat">مونتسرات</string>
+    <string name="montserrat_hint" translatable="false">664-492-3456</string>
+    <string name="mozambique">موزمبيق</string>
+    <string name="mozambique_hint" translatable="false">82 123 4567</string>
+    <string name="mtrl_badge_numberless_content_description">إشعار جديد</string>
+    <string name="mtrl_chip_close_icon_content_description">إزالة %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">يبلغ عدد الإشعارات الجديدة أكثر من %1$d.</string>
+    <string name="mtrl_picker_a11y_next_month">التغيير إلى الشهر التالي</string>
+    <string name="mtrl_picker_a11y_prev_month">التغيير إلى الشهر السابق</string>
+    <string name="mtrl_picker_announce_current_selection">الاختيار الحالي: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">يُرجى اختيار تاريخ.</string>
+    <string name="mtrl_picker_date_header_unselected">التاريخ المحدَّد</string>
+    <string name="mtrl_picker_day_of_week_column_header">عمود الأيام: %1$s</string>
+    <string name="mtrl_picker_invalid_format">التنسيق غير صالح</string>
+    <string name="mtrl_picker_invalid_format_example">مثال: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">استخدام: %1$s</string>
+    <string name="mtrl_picker_invalid_range">النطاق غير صالح</string>
+    <string name="mtrl_picker_navigate_to_year_description">التنقل إلى العام %1$s</string>
+    <string name="mtrl_picker_out_of_range">خارج النطاق: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">تاريخ البدء – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – تاريخ الانتهاء</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">يُرجى اختيار نطاق زمني.</string>
+    <string name="mtrl_picker_range_header_unselected">تاريخ البدء - تاريخ الانتهاء</string>
+    <string name="mtrl_picker_save">حفظ</string>
+    <string name="mtrl_picker_text_input_date_hint">التاريخ</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">تاريخ الانتهاء</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">تاريخ البدء</string>
+    <string name="mtrl_picker_text_input_day_abbr">ي</string>
+    <string name="mtrl_picker_text_input_month_abbr">ش</string>
+    <string name="mtrl_picker_text_input_year_abbr">س</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">التبديل إلى وضع \"الإدخال في التقويم\"</string>
+    <string name="mtrl_picker_toggle_to_day_selection">انقر للتبديل إلى اختيار يوم</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">التبديل إلى وضع \"إدخال النص\"</string>
+    <string name="mtrl_picker_toggle_to_year_selection">انقر للتبديل إلى اختيار عام</string>
+    <string name="myanmar">(بورما) ميانمار</string>
+    <string name="myanmar_hint" translatable="false">9 712 345 678</string>
+    <string name="namibia">ناميبيا</string>
+    <string name="namibia_hint" translatable="false">81 123 4567</string>
+    <string name="nauru">ناورو</string>
+    <string name="nauru_hint" translatable="false">555 1234</string>
+    <string msgid="542007171693138492" name="navigation_menu">"قائمة تنقل"</string>
+    <string name="nepal">نيبال</string>
+    <string name="nepal_hint" translatable="false">984-1234567</string>
+    <string name="netherlands">هولندا</string>
+    <string name="netherlands_hint" translatable="false">6 12345678</string>
+    <string name="new_caledonia">كاليدونيا الجديدة</string>
+    <string name="new_caledonia_hint" translatable="false">75.12.34</string>
+    <string name="new_zealand">نيوزيلندا</string>
+    <string name="new_zealand_hint" translatable="false">21 123 4567</string>
+    <string name="nicaragua">نيكاراجوا</string>
+    <string name="niger">النيجر</string>
+    <string name="niger_hint" translatable="false">93 12 34 56</string>
+    <string name="nigeria">نيجيريا</string>
+    <string name="nigeria_hint" translatable="false">802 123 4567</string>
+    <string name="niue">نيوي</string>
+    <string name="niue_hint" translatable="false">888 4012</string>
+    <string name="norfolk">جزيرة نورفولك</string>
+    <string name="norfolk_hint" translatable="false">3 81234</string>
+    <string name="north_korea">كوريا الشمالية</string>
+    <string name="north_korea_hint" translatable="false">192 123 4567</string>
+    <string name="north_macedonia">مقدونيا الشمالية</string>
+    <string name="north_macedonia_hint" translatable="false">72 345 678</string>
+    <string name="northern_mariana">جزر ماريانا الشمالية</string>
+    <string name="northern_mariana_hint" translatable="false">670-234-5678</string>
+    <string name="norway">النرويج</string>
+    <string name="norway_hint" translatable="false">406 12 345</string>
+    <string msgid="6610465462668679431" name="not_selected">"غير محدّد"</string>
+    <string msgid="875452955155264703" name="off">"غير مفعّل"</string>
+    <string name="oman">عُمان</string>
+    <string name="oman_hint" translatable="false">9212 3456</string>
+    <string msgid="8655164131929253426" name="on">"مفعّل"</string>
+    <string name="pakistan">باكستان</string>
+    <string name="pakistan_hint" translatable="false">301 2345678</string>
+    <string name="palau">بالاو</string>
+    <string name="palau_hint" translatable="false">620 1234</string>
+    <string name="panama">بنما</string>
+    <string name="panama_hint" translatable="false">6123-4567</string>
+    <string name="papua_new_guinea">بابوا غينيا الجديدة</string>
+    <string name="papua_new_guinea_hint" translatable="false">7012 3456</string>
+    <string name="paraguay">باراغواي</string>
+    <string name="paraguay_hint" translatable="false">961 456789</string>
+    <string name="password_toggle_content_description">عرض كلمة المرور</string>
+    <string name="peru">بيرو</string>
+    <string name="peru_hint" translatable="false">912 345 678</string>
+    <string name="philippinies">الفلبين</string>
+    <string name="philippinies_hint" translatable="false">905 123 4567</string>
+    <string name="pitcairn">بيتكيرن</string>
+    <string name="poland">بولندا</string>
+    <string name="poland_hint" translatable="false">512 345 678</string>
+    <string name="portugal">البرتغال</string>
+    <string name="portugal_hint" translatable="false">912 345 678</string>
+    <string name="puerto_rico">بورتوريكو</string>
+    <string name="puerto_rico_hint" translatable="false">787-234-5678</string>
+    <string name="qatar">قطر</string>
+    <string name="qatar_hint" translatable="false">3312 3456</string>
+    <string msgid="5941395253238309765" name="range_end">"نهاية النطاق"</string>
+    <string msgid="7097486360902471446" name="range_start">"بداية النطاق"</string>
+    <string name="reunion">ريونيون</string>
+    <string name="reunion_hint" translatable="false">692 12 34 56</string>
+    <string name="romania">رومانيا</string>
+    <string name="romania_hint" translatable="false">712 034 567</string>
+    <string name="russia">روسيا</string>
+    <string name="russia_hint" translatable="false">912 345-67-89</string>
+    <string name="rwanda">رواندا</string>
+    <string name="rwanda_hint" translatable="false">720 123 456</string>
+    <string name="saint_barhelemy">سانت بارتليمي</string>
+    <string name="saint_barhelemy_hint" translatable="false">690 00 12 34</string>
+    <string name="saint_helena">سانت هيلانة</string>
+    <string name="saint_helena_hint" translatable="false">51234</string>
+    <string name="saint_kitts">سانت كيتس ونيفيس</string>
+    <string name="saint_kitts_hint" translatable="false">869-765-2917</string>
+    <string name="saint_lucia">سانت لوسيا</string>
+    <string name="saint_lucia_hint" translatable="false">758-284-5678</string>
+    <string name="saint_martin">سانت مارتن</string>
+    <string name="saint_martin_hint" translatable="false">690 00 12 34</string>
+    <string name="saint_pierre">سانت بيير/ميكلون</string>
+    <string name="saint_pierre_hint" translatable="false">55 12 34</string>
+    <string name="saint_vincent">سانت فينسنت والغرينادين</string>
+    <string name="saint_vincent_hint" translatable="false">784-430-1234</string>
+    <string name="samoa">ساموا</string>
+    <string name="samoa_hint" translatable="false">72 12345</string>
+    <string name="san_marino">سان مارينو</string>
+    <string name="san_marino_hint" translatable="false">66 66 12 12</string>
+    <string name="sao_tome">Sساو تومي وبرينسيب</string>
+    <string name="sao_tome_hint" translatable="false">981 2345</string>
+    <string name="saudi_arabia">السعودية</string>
+    <string name="saudi_arabia_hint" translatable="false">51 234 5678</string>
+    <string name="search">بحث</string>
+    <string msgid="6420018528474762666" name="search_bar_search">"بحث"</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"البحث"</string>
+    <string name="select_country">أختر دولة</string>
+    <string msgid="6043586758067023" name="selected">"محدّد"</string>
+    <string name="senegal">السنغال</string>
+    <string name="senegal_hint" translatable="false">70 123 45 67</string>
+    <string name="serbia">صربيا</string>
+    <string name="serbia_hint" translatable="false">60 1234567</string>
+    <string name="seychelles">سيشل</string>
+    <string name="seychelles_hint" translatable="false">2 510 123</string>
+    <string name="sierra_leone">سيراليون</string>
+    <string name="sierra_leone_hint" translatable="false">25 123456</string>
+    <string name="singapore">سنغافورة</string>
+    <string name="singapore_hint" translatable="false">8123 4567</string>
+    <string name="sint_maarten">سانت مارتن</string>
+    <string name="sint_maarten_hint" translatable="false">721-520-5678</string>
+    <string name="siri_lanka">سريلانكا</string>
+    <string name="siri_lanka_hint" translatable="false">71 234 5678</string>
+    <string name="slovakia">سلوفاكيا</string>
+    <string name="slovakia_hint" translatable="false">912 123 456</string>
+    <string name="slovenia">سلوفينيا</string>
+    <string name="slovenia_hint" translatable="false">070 123 456</string>
+    <string msgid="3962933905051144957" name="snackbar_dismiss">"إغلاق"</string>
+    <string name="solomon_islands">جزر سليمان</string>
+    <string name="solomon_islands_hint" translatable="false">74 21234</string>
+    <string name="somali">الصومال</string>
+    <string name="somali_hint" translatable="false">7 1123456</string>
+    <string name="south_africa">جنوب أفريقيا</string>
+    <string name="south_africa_hint" translatable="false">71 123 4567</string>
+    <string name="south_korea">كوريا الجنوبية</string>
+    <string name="south_korea_hint" translatable="false">-2000-0000</string>
+    <string name="south_sudan">جنوب السودان</string>
+    <string name="south_sudan_hint" translatable="false">977 123 456</string>
+    <string name="spain">إسبانيا</string>
+    <string name="spain_hint" translatable="false">612 34 56 78</string>
+    <string name="state_of_palestine">دولة فلسطين</string>
+    <string name="state_of_palestine_hint" translatable="false">599 123 456</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="sudan">السودان</string>
+    <string name="sudan_hint" translatable="false">91 123 1234</string>
+    <string msgid="7189888345201419934" name="suggestions_available">"إليك الاقتراحات:"</string>
+    <string name="suriname">سورينام</string>
+    <string name="suriname_hint" translatable="false">741-2345</string>
+    <string name="swaziland">سوازيلند (إسواتيني)</string>
+    <string name="swaziland_hint" translatable="false">7612 3456</string>
+    <string name="sweden">السويد</string>
+    <string name="sweden_hint" translatable="false">70 123 45 67</string>
+    <string msgid="2561197295334830845" name="switch_role">"تبديل"</string>
+    <string name="switzerland">سويسرا</string>
+    <string name="switzerland_hint" translatable="false">78 123 45 67</string>
+    <string name="syrian">سوريا</string>
+    <string name="syrian_hint" translatable="false">944 567 890</string>
+    <string msgid="1672349317127674378" name="tab">"علامة تبويب"</string>
+    <string name="taijikistan">طاجيكستان</string>
+    <string name="taijikistan_hint" translatable="false">917 12 3456</string>
+    <string name="taiwan">تايوان</string>
+    <string name="taiwan_hint" translatable="false">912 345 678</string>
+    <string name="tazmania">تنزانيا</string>
+    <string name="tazmania_hint" translatable="false">621 234 567</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> في المئة."</string>
+    <string name="thailand">تايلاند</string>
+    <string name="thailand_hint" translatable="false">81 234 5678</string>
+    <string msgid="5096144640014509074" name="time_picker_am">"ص"</string>
+    <string msgid="7241191970823415723" name="time_picker_hour">"ساعة"</string>
+    <string msgid="4149641012513526783" name="time_picker_hour_24h_suffix">"‏%1$d ساعة"</string>
+    <string msgid="6081676287789101196" name="time_picker_hour_selection">"اختيار الساعة"</string>
+    <string msgid="6952032626122080528" name="time_picker_hour_suffix">"‏الساعة %1$d"</string>
+    <string msgid="5298761125390275834" name="time_picker_hour_text_field">"لمدة ساعة"</string>
+    <string msgid="6116528647594005945" name="time_picker_minute">"دقيقة"</string>
+    <string msgid="8494777394375441602" name="time_picker_minute_selection">"اختيار الدقائق"</string>
+    <string msgid="3206486707779478173" name="time_picker_minute_suffix">"‏%1$d دقيقة"</string>
+    <string msgid="994099543833979061" name="time_picker_minute_text_field">"لمدة دقائق"</string>
+    <string msgid="7352665290700284516" name="time_picker_period_toggle_description">"يُرجى اختيار ص (صباحًا) أو م (مساءً)."</string>
+    <string msgid="2232702812657998674" name="time_picker_pm">"م"</string>
+    <string name="timor_leste">تيمور الشرقية</string>
+    <string name="timor_leste_hint" translatable="false">7721 2345</string>
+    <string name="togo">توغو</string>
+    <string name="togo_hint" translatable="false">90 11 23 45</string>
+    <string name="tokelau">توكيلاو</string>
+    <string name="tokelau_hint" translatable="false">7290</string>
+    <string name="tonga">تونغا</string>
+    <string name="tonga_hint" translatable="false">771 5123</string>
+    <string msgid="2732804537909054941" name="tooltip_long_press_label">"إظهار التلميح"</string>
+    <string msgid="8191239805703103845" name="tooltip_pane_description">"تلميح"</string>
+    <string name="trinidad_and_tobago">ترينيداد وتوباغو	</string>
+    <string name="trinidad_and_tobago_hint" translatable="false">868-291-1234</string>
+    <string name="tunisia">تونس</string>
+    <string name="tunisia_hint" translatable="false">20 123 456</string>
+    <string name="turkey">تركيا</string>
+    <string name="turkey_hint" translatable="false">501 234 56 78</string>
+    <string name="turkmenistan">تركمانستان</string>
+    <string name="turkmenistan_hint" translatable="false">66 123456</string>
+    <string name="turks_and_caicos">جزر توركس/كايكوس</string>
+    <string name="turks_and_caicos_hint" translatable="false">649-231-1234</string>
+    <string name="tuvalu">توفالو</string>
+    <string name="tuvalu_hint" translatable="false">901234</string>
+    <string name="uganda">أوغندا</string>
+    <string name="uganda_hint" translatable="false">712 345678</string>
+    <string name="ukraina">أوكرانيا</string>
+    <string name="ukraina_hint" translatable="false">50 123 4567</string>
+    <string name="united_arab_emirates">الإمارات العربية المتحدة</string>
+    <string name="united_arab_emirates_hint" translatable="false">50 123 4567</string>
+    <string name="united_kingdom">المملكة المتحدة</string>
+    <string name="united_kingdom_hint" translatable="false">7400 123456</string>
+    <string name="united_states_america">الولايات المتحدة</string>
+    <string name="united_states_america_hint" translatable="false">201-555-0123</string>
+    <string name="unkown">غير معروف</string>
+    <string name="uruguay">أوروغواي</string>
+    <string name="uruguay_hint" translatable="false">94 231 234</string>
+    <string name="uzbekistan">أوزبكستان</string>
+    <string name="uzbekistan_hint" translatable="false">91 234 56 78</string>
+    <string name="vanuatu">فانواتو</string>
+    <string name="vanuatu_hint" translatable="false">591 2345</string>
+    <string name="venezuela">فنزويلا</string>
+    <string name="venezuela_hint" translatable="false">412-1234567</string>
+    <string name="vietnam">فيتنام</string>
+    <string name="vietnam_hint" translatable="false">91 234 56 78</string>
+    <string name="virgin_island_us">جزر العذراء الأمريكية</string>
+    <string name="virgin_islands">جزر العذراء البريطانية</string>
+    <string name="virgin_islands_hint" translatable="false">284-300-1234</string>
+    <string name="walli_and_fatuna">واليس وفوتونا</string>
+    <string name="walli_and_fatuna_hint" translatable="false">82 12 34</string>
+    <string name="yemen">اليمن</string>
+    <string name="yemen_hint" translatable="false">712 345 678</string>
+    <string name="zambia">زامبيا</string>
+    <string name="zambia_hint" translatable="false">95 5123456</string>
+    <string name="zimbabwe">زيمبابوي</string>
+    <string name="zimbabwe_hint" translatable="false">71 234 5678</string>
+</resources>
