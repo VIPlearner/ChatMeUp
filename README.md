@@ -31,9 +31,7 @@ Model-View-ViewModel (MVVM)
 
 **Edit Profile:** Change image, change status, Change name
 
-**Chat:** Send and show messages sorted by timestamp, online status, custom toolbar, update on change
-
-**General:** Auto login, bottom navigation, error messages with snackbar, progress bar
+**Chat:** Send and show messages sorted by timestamp, online status, update on change
 
 ## Screenshots
 
@@ -50,13 +48,12 @@ Model-View-ViewModel (MVVM)
 <p align = "left" >
   <img width="410" alt="Screenshot 2023-07-02 at 18 36 55" sr<img width="406" alt="Screenshot 2023-07-02 at 19 20 42"       
    src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/7543e458-d751-4ada-bbff-cce76c3b2ca7">
-
 </p>
 
 
 ### Firebase
 <p align = "left" >
-  <img  width="378" height="332" src="github_images/db.png"> 
+  <img width="613" alt="Screenshot 2023-07-02 at 19 24 20" src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/2302609e-80e9-4b1f-ac01-f5c438dba588">
 </p>
 
 ## Setup
