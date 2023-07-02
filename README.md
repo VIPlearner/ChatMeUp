@@ -51,8 +51,6 @@ Model-View-ViewModel (MVVM)
   <img width="410" alt="Screenshot 2023-07-02 at 18 36 55" sr<img width="406" alt="Screenshot 2023-07-02 at 19 20 42"       
    src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/7543e458-d751-4ada-bbff-cce76c3b2ca7">
 
-  <img width="250" height="500"  src="github_images/notifications.png"> 
-  <img width="250" height="500" src="github_images/users.png"> 
 </p>
 
 
