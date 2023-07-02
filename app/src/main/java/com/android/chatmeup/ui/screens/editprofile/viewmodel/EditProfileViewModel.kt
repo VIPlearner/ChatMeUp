@@ -84,7 +84,7 @@ class EditProfileViewModel @Inject constructor(
     fun updateAbout(
         aboutStr: String
     ){
-        appTaskManager.addTaskToQueue(AppTaskManager.Task.UpdateDisplayName(aboutStr))
+        appTaskManager.addTaskToQueue(AppTaskManager.Task.UpdateAbout(aboutStr))
     }
 
     fun updateProfileImage(

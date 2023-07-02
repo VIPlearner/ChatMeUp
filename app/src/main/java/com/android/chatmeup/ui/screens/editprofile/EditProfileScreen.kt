@@ -483,6 +483,8 @@ fun EditProfileScreen(
                                             onViewProfileImageClicked(it)
                                         }
                                     } else {
+                                        imagePainter.onForgotten()
+                                        imagePainter.onRemembered()
                                         onUpdateProfileImageClicked()
                                     }
                                 },

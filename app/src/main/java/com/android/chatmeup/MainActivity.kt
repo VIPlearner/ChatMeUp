@@ -352,6 +352,12 @@ class MainActivity : ComponentActivity() {
                                             it
                                         )
                                     )
+                                    appTaskManager.addTaskToQueue(
+                                        AppTaskManager.Task.UpdateChatUsingUserInfo(
+                                            this@MainActivity,
+                                            it
+                                        )
+                                    )
                                 }
                             }
                         }
