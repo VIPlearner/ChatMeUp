@@ -48,20 +48,13 @@ Model-View-ViewModel (MVVM)
 ### Chats | Notifications | Users
 
 <p align = "left" >
-  <img width="410" alt="Screenshot 2023-07-02 at 18 36 55" sr<img width="406" alt="Screenshot 2023-07-02 at 19 20 42"   src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/7543e458-d751-4ada-bbff-cce76c3b2ca7">
-c="https://github.com/VIPlearner/ChatMeUp/assets/63104739/bd92b75a-471c-4cef-94c5-5080406ebc18">
+  <img width="410" alt="Screenshot 2023-07-02 at 18 36 55" sr<img width="406" alt="Screenshot 2023-07-02 at 19 20 42"       
+   src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/7543e458-d751-4ada-bbff-cce76c3b2ca7">
 
   <img width="250" height="500"  src="github_images/notifications.png"> 
   <img width="250" height="500" src="github_images/users.png"> 
 </p>
 
-### Settings | Chat | Profile
-
-<p align = "left" >
-  <img width="250" height="500" src="github_images/settings.png">
-  <img width="250" height="500"  src="github_images/chat.png"> 
-  <img width="250" height="500" src="github_images/profile.png"> 
-</p>
 
 ### Firebase
 <p align = "left" >
