@@ -29,8 +29,6 @@ Model-View-ViewModel (MVVM)
 
 **Notifications:** Accept/decline friend requests, notifications symbol
 
-**Users:** List of users
-
 **Edit Profile:** Change image, change status, Change name
 
 **Chat:** Send and show messages sorted by timestamp, online status, custom toolbar, update on change
@@ -39,18 +37,20 @@ Model-View-ViewModel (MVVM)
 
 ## Screenshots
 
-### Start | Login | Create Account
+### Splash Screen | Login | Create Account
 
 <p align = "left" >
-  <img width="250" height="500" src="github_images/start.png">
-  <img width="250" height="500"  src="github_images/login.png"> 
-  <img width="250" height="500" src="github_images/create.png"> 
+  <img width="421" alt="Screenshot 2023-07-02 at 18 28 27" src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/6ae5a850-20d5-4459-be07-26ac32d0fadf">
+  <img width="407" alt="Screenshot 2023-07-02 at 19 01 36" src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/132a78d7-a144-4913-a26e-46ff7abd6fab">
+  <img width="406" alt="Screenshot 2023-07-02 at 19 01 49" src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/302610ff-d3df-4508-9c6e-30ec3f01bf86">
 </p>
 
 ### Chats | Notifications | Users
 
 <p align = "left" >
-  <img width="250" height="500" src="github_images/chats.png">
+  <img width="410" alt="Screenshot 2023-07-02 at 18 36 55" sr<img width="406" alt="Screenshot 2023-07-02 at 19 20 42"   src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/7543e458-d751-4ada-bbff-cce76c3b2ca7">
+c="https://github.com/VIPlearner/ChatMeUp/assets/63104739/bd92b75a-471c-4cef-94c5-5080406ebc18">
+
   <img width="250" height="500"  src="github_images/notifications.png"> 
   <img width="250" height="500" src="github_images/users.png"> 
 </p>
