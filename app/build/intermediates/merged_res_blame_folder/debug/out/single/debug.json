@@ -1,0 +1,214 @@
+[
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_new_chat.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_new_chat.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/font_inter_light.ttf.flat",
+        "source": "com.android.chatmeup.app-main-91:/font/inter_light.ttf"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/anim_slide_in_bottom_half.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/anim/slide_in_bottom_half.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/font_inter_bold.ttf.flat",
+        "source": "com.android.chatmeup.app-main-91:/font/inter_bold.ttf"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_message_svg.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_message_svg.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_camera.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_camera.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_send_button.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_send_button.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/anim_slide_out_bottom_fast.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/anim/slide_out_bottom_fast.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_fine_lady_profile_pic.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/fine_lady_profile_pic.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-mdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-mdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_more.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_more.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xxhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/font_inter_regular.ttf.flat",
+        "source": "com.android.chatmeup.app-main-91:/font/inter_regular.ttf"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/anim_slide_in_bottom_fast.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/anim/slide_in_bottom_fast.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/anim_slide_in_bottom_half_fast.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/anim/slide_in_bottom_half_fast.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_login_image_dark_theme.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/login_image_dark_theme.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_contacts_svg.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_contacts_svg.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/font_inter_medium.ttf.flat",
+        "source": "com.android.chatmeup.app-main-91:/font/inter_medium.ttf"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/xml_data_extraction_rules.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/anim_slide_out_bottom.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/anim/slide_out_bottom.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/anim_slide_out_bottom_half.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/anim/slide_out_bottom_half.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/xml_provider_paths.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-hdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-hdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_login_image.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/login_image.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_message.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_message.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_error.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_error.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xxxhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-xhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-xhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/xml_backup_rules.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_more_svg.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_more_svg.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/drawable_ic_profile.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/anim_slide_in_bottom.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/anim/slide_in_bottom.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/anim_slide_out_bottom_half_fast.xml.flat",
+        "source": "com.android.chatmeup.app-main-91:/anim/slide_out_bottom_half_fast.xml"
+    },
+    {
+        "merged": "com.android.chatmeup.app-merged_res-89:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.android.chatmeup.app-main-91:/mipmap-hdpi/ic_launcher.png"
+    }
+]
