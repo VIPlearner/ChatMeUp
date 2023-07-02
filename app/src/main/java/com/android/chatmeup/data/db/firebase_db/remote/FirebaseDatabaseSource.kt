@@ -169,7 +169,7 @@ class FirebaseDataSource {
     }
 
     fun updateUserStatus(userID: String, status: String): Task<Void> {
-        return refToPath("users/$userID/info/status").setValue(status)
+        return refToPath("users/$userID/info/aboutStr").setValue(status)
     }
 
     fun updateOnlineStatus(userID: String, status: Boolean){

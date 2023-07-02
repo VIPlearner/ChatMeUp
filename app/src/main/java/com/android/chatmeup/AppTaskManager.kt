@@ -628,6 +628,10 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
             onTaskCompleted()
             return
         }
+        if(myUserID == it.id){
+            onTaskCompleted()
+            return
+        }
         ioScope.launch {
             try{
                 if (chatMeUpDatabase.chatDao.chatExists(convertTwoUserIDs(myUserID, it.id))) {

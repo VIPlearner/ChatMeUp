@@ -40,6 +40,7 @@ fun epochToHoursAndMinutes(epoch: Long): String {
 }
 
 fun epochToDayMonthYear(epoch: Long): String {
+    if(epoch == 0L) return ""
     val date =
         Date(epoch)
     val formatter = SimpleDateFormat(
@@ -51,6 +52,7 @@ fun epochToDayMonthYear(epoch: Long): String {
 }
 
 fun convertEpochToString(epochTime: Long): String {
+    if(epochTime == 0L) return ""
     val currentTime = System.currentTimeMillis()
     val currentCalendar = Calendar.getInstance()
     currentCalendar.timeInMillis = currentTime
