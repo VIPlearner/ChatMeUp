@@ -268,7 +268,7 @@ fun ChatScreen(
                 activity = activity,
                 onDeleteMessage = {
                     viewModel.appTaskManager.addTaskToQueue(
-                        AppTaskManager.Task.DeleteMessage(otherUserId,it)
+                        AppTaskManager.Task.DeleteMessage(context, otherUserId,it)
                     )
                 },
                 onCloseImagePage = {

@@ -7,6 +7,7 @@ import com.android.chatmeup.data.db.firebase_db.entity.User
 import com.android.chatmeup.data.db.firebase_db.entity.UserFriend
 import com.android.chatmeup.data.db.firebase_db.entity.UserNotification
 import com.android.chatmeup.data.db.firebase_db.entity.UserRequest
+import com.android.chatmeup.data.db.room_db.data.MessageStatus
 import com.android.chatmeup.util.wrapSnapshotToArrayList
 import com.android.chatmeup.util.wrapSnapshotToClass
 import com.google.android.gms.tasks.Task
@@ -192,8 +193,12 @@ class FirebaseDataSource {
         refToPath("chats/$chatID/info/no_of_unread_messages").setValue(value)
     }
 
-    fun updateSeenMessage(chatID: String, messageID: String, value: Boolean){
-        refToPath("messages/$chatID/$messageID/seen").setValue(value)
+    fun updateMessageRead(chatID: String, messageID: String){
+        refToPath("messages/$chatID/$messageID/messageStatus").setValue(MessageStatus.READ.toString())
+    }
+
+    fun updateMessageDelivered(chatID: String, messageID: String){
+        refToPath("messages/$chatID/$messageID/messageStatus").setValue(MessageStatus.DELIVERED.toString())
     }
 
     fun updateNewFriend(myUser: UserFriend, otherUser: UserFriend) {

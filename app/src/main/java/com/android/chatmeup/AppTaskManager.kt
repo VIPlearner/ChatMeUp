@@ -10,6 +10,7 @@ import com.android.chatmeup.data.db.firebase_db.entity.UserInfo
 import com.android.chatmeup.data.db.firebase_db.repository.DatabaseRepository
 import com.android.chatmeup.data.db.firebase_db.repository.StorageRepository
 import com.android.chatmeup.data.db.room_db.ChatMeUpDatabase
+import com.android.chatmeup.data.db.room_db.data.MessageStatus
 import com.android.chatmeup.data.db.room_db.data.MessageType
 import com.android.chatmeup.data.db.room_db.entity.RoomChat
 import com.android.chatmeup.data.db.room_db.entity.RoomContact
@@ -21,8 +22,10 @@ import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.launch
 import timber.log.Timber
+import java.io.File
 import java.util.LinkedList
 import java.util.Queue
 import javax.inject.Inject
@@ -54,6 +57,7 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
             taskQueue.add(task)
             return
         }
+        taskInProgressState = true
         performTask(task)
     }
 
@@ -78,10 +82,9 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
     }
 
     private fun onTaskCompleted(){
-        taskInProgressState = false
         taskQueue.poll()?.let{
             performTask(it)
-        }
+        }?: { taskInProgressState = false }
     }
 
     private fun onDownloadTaskCompleted(
@@ -138,7 +141,7 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
                     deleteContactUsingContactID(task.userID)
                 }
                 is Task.DeleteMessage -> {
-                    deleteMessage(task.otherUserID, task.roomMessage)
+                    deleteMessage(task.context, task.otherUserID, task.roomMessage)
                 }
                 is Task.DeleteMessageFromRoomDB -> {
                     deleteMessageFromRoomDB(task.messageID)
@@ -161,10 +164,18 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
                 is Task.UpdateContactUsingUserInfo -> {
                     updateContactUsingUserInfo(task.context, task.userInfo)
                 }
+                is Task.UpdateChatUsingLastFirebaseMessage -> {
+                    updateChatUsingLastFirebaseMessage(task.message)
+                }
                 is Task.UpdateDisplayName -> {
                     updateDisplayName(task.displayName)
                 }
-
+                is Task.UpdateMessageDelivered -> {
+                    updateMessageDelivered(task.chatID, task.messageID)
+                }
+                is Task.UpdateMessageRead -> {
+                    updateMessageRead(task.chatID, task.messageID)
+                }
                 is Task.UpdateOnlineStatus -> {
                     updateOnlineStatus(task.isOnline)
                 }
@@ -264,7 +275,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
     }
 
     private fun addNewContact(userID: String){
-        taskInProgressState = true
         val myUserID = Firebase.auth.uid
         if(myUserID == null){
             onTaskCompleted()
@@ -318,7 +328,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun createNewChatFromUserID(context: Context, userID: String){
-        taskInProgressState = true
         val myUserID = Firebase.auth.uid
         if(myUserID == null){
             onTaskCompleted()
@@ -343,7 +352,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun createNewChatFromUserInfo(context: Context, userInfo: UserInfo){
-        taskInProgressState = true
         val myUserID = Firebase.auth.uid
         if(myUserID == null){
             onTaskCompleted()
@@ -367,7 +375,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun createNewContactFromUserId(context: Context, userID: String){
-        taskInProgressState = true
         dbRepository.loadUserInfo(userID){result ->
             when(result) {
                 is Result.Success ->{
@@ -388,7 +395,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun createNewContactFromUserInfo(context: Context, it: UserInfo){
-        taskInProgressState = true
         ioScope.launch{
             val contact = RoomContact(
                 userID = it.id,
@@ -421,7 +427,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun createNewRoomMessageFromFBMessage(context: Context, message: Message){
-        taskInProgressState = true
         val chatID = convertTwoUserIDs(message.senderID, message.receiverID)
         val messageID = message.messageID
 
@@ -449,7 +454,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun deleteChatUsingChatID(chatID: String){
-        taskInProgressState = true
         dbRepository.removeChat(chatID)
         dbRepository.removeMessages(chatID)
         ioScope.launch {
@@ -488,7 +492,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun deleteChatUsingUserID(userID: String){
-        taskInProgressState = true
         val myUserID = Firebase.auth.uid
         if(myUserID == null){
             onTaskCompleted()
@@ -499,7 +502,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         onTaskCompleted()
     }
     private fun deleteContactUsingContactID(userID: String){
-        taskInProgressState = true
         val myUserID = Firebase.auth.uid
         if(myUserID == null) {
             onTaskCompleted()
@@ -524,8 +526,11 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
             onTaskCompleted()
         }
     }
-    private fun deleteMessage(otherUserID: String, roomMessage: RoomMessage){
-        taskInProgressState = true
+    private fun deleteMessage(
+        context: Context,
+        otherUserID: String,
+        roomMessage: RoomMessage
+    ){
         val myUserID = Firebase.auth.uid
         if(myUserID == null) {
             onTaskCompleted()
@@ -534,10 +539,17 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         dbRepository.removeMessage(otherUserID,roomMessage.chatID, roomMessage.messageID)
         ioScope.launch {
             chatMeUpDatabase.messageDao.deleteMessage(roomMessage)
+            try {
+                val localThumbnailFilePath = "${roomMessage.chatID}/${roomMessage.messageID}_thumbnail.png"
+                val localFilePath = "${roomMessage.chatID}/${roomMessage.messageID}.png"
+                File(context.filesDir, localFilePath).delete()
+                File(context.filesDir, localThumbnailFilePath).delete()
+            }catch (e: Exception){
+                Timber.tag(tag).d("File does not exist")
+            }
             onTaskCompleted()
         }
     }
-
     private fun deleteMessageFromRoomDB(messageID: String){
         ioScope.launch{
             try {
@@ -556,7 +568,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun loadMessagesUsingChatID(context: Context, chatID: String){
-        taskInProgressState = true
         dbRepository.loadMessages(chatID){result ->
             when(result){
                 is Result.Error -> {
@@ -576,7 +587,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun updateAbout(about: String){
-        taskInProgressState = true
         val myUserID = Firebase.auth.uid
         if(myUserID == null) {
             onTaskCompleted()
@@ -596,7 +606,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun updateChatFromUserInfoUsingUserID(context: Context, userID: String){
-        taskInProgressState = true
         val myUserID = Firebase.auth.uid
         if(myUserID.isNullOrEmpty()) {
             onTaskCompleted()
@@ -621,8 +630,29 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
             }
         }
     }
+    private fun updateChatUsingLastFirebaseMessage(message: Message){
+        val myUserID = Firebase.auth.uid
+        if(myUserID.isNullOrEmpty()) {
+            onTaskCompleted()
+            return
+        }
+        val fbMessage = firebaseMessageToRoomMessage(message)
+        ioScope.launch{
+            if (chatMeUpDatabase.chatDao.chatExists(fbMessage.chatID)) {
+                val chat =
+                    chatMeUpDatabase.chatDao.getChat(fbMessage.chatID).apply {
+                        no_of_unread_messages += 1
+                        lastMessageText = fbMessage.messageText
+                        lastMessageTime = fbMessage.messageTime
+                        messageType = enumValueOf(fbMessage.messageType)
+                        lastMessageSenderID = fbMessage.senderID
+                    }
+                chatMeUpDatabase.chatDao.upsertChat(chat)
+            }
+            onTaskCompleted()
+        }
+    }
     private fun updateChatUsingUserInfo(context: Context, it: UserInfo){
-        taskInProgressState = true
         val myUserID = Firebase.auth.uid
         if(myUserID.isNullOrEmpty()) {
             onTaskCompleted()
@@ -654,7 +684,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun updateContactUsingUserID(context: Context,userID: String){
-        taskInProgressState = true
         dbRepository.loadUserInfo(userID){result ->
             when(result) {
                 is Result.Success ->{
@@ -671,7 +700,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun updateContactUsingUserInfo(context: Context,it: UserInfo){
-        taskInProgressState = true
         ioScope.launch{
             try{
                 if (!chatMeUpDatabase.contactDao.contactExists(it.id)) {
@@ -736,7 +764,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun updateDisplayName(displayName: String){
-        taskInProgressState = true
         val myUserID = Firebase.auth.uid
         if(myUserID == null) {
             onTaskCompleted()
@@ -755,8 +782,47 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
             }
         }
     }
+    private fun updateMessageRead(chatID: String, messageID: String){
+        val myUserID = Firebase.auth.uid
+        if(myUserID.isNullOrEmpty()) {
+            onTaskCompleted()
+            return
+        }
+        dbRepository.updateMessageRead(chatID, messageID)
+        ioScope.launch {
+            try{
+                val message = chatMeUpDatabase.messageDao.getMessage(messageID)
+                chatMeUpDatabase.messageDao.upsertMessage(message.copy(messageStatus = MessageStatus.READ))
+                onTaskCompleted()
+            }
+            catch (e: Exception){
+                Timber.tag(tag).e("Error $e")
+                onTaskCompleted()
+                return@launch
+            }
+        }
+    }
+    private fun updateMessageDelivered(chatID: String, messageID: String){
+        val myUserID = Firebase.auth.uid
+        if(myUserID.isNullOrEmpty()) {
+            onTaskCompleted()
+            return
+        }
+        dbRepository.updateMessageRead(chatID, messageID)
+        ioScope.launch {
+            try{
+                val message = chatMeUpDatabase.messageDao.getMessage(messageID)
+                chatMeUpDatabase.messageDao.upsertMessage(message.copy(messageStatus = MessageStatus.DELIVERED))
+                onTaskCompleted()
+            }
+            catch (e: Exception){
+                Timber.tag(tag).e("Error $e")
+                onTaskCompleted()
+                return@launch
+            }
+        }
+    }
     private fun updateOnlineStatus(isOnline: Boolean){
-        taskInProgressState = true
         val myUserID = Firebase.auth.uid
         if(myUserID == null) {
             onTaskCompleted()
@@ -777,7 +843,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         }
     }
     private fun updateRoomChatFromFBChat(chatID: String){
-        taskInProgressState = true
         dbRepository.loadChat(chatID){result ->
             if(result is Result.Success){
                 result.data?.let{
@@ -858,6 +923,7 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
             val userID: String
         ): Task()
         data class DeleteMessage(
+            val context: Context,
             val otherUserID: String,
             val roomMessage: RoomMessage,
         ): Task()
@@ -876,6 +942,9 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
             val context: Context,
             val userInfo: UserInfo
         ): Task()
+        data class UpdateChatUsingLastFirebaseMessage(
+            val message: Message
+        ): Task()
         data class UpdateContactUsingUserID(
             val context: Context,
             val userID: String
@@ -883,6 +952,14 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         data class UpdateContactUsingUserInfo(
             val context: Context,
             val userInfo: UserInfo
+        ): Task()
+        data class UpdateMessageDelivered(
+            val chatID: String,
+            val messageID: String
+        ): Task()
+        data class UpdateMessageRead(
+            val chatID: String,
+            val messageID: String
         ): Task()
         data class UpdateOnlineStatus(
             val isOnline: Boolean,
@@ -893,9 +970,6 @@ class AppTaskManager @Inject constructor(private val chatMeUpDatabase: ChatMeUpD
         data class UpdateAbout(
             val about: String
         ): Task()
-//        data class UpdateRoomMessageFromFBMessage(
-//            val message: Message
-//        ): Task()
         data class UpdateRoomChatFromFBChat(
             val chatID: String
         ): Task()

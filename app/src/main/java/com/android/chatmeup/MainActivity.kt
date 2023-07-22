@@ -2,7 +2,6 @@ package com.android.chatmeup
 
 import android.os.Build
 import android.os.Bundle
-import android.view.Surface
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
@@ -23,14 +22,12 @@ import com.android.chatmeup.data.db.firebase_db.remote.FirebaseReferenceValueObs
 import com.android.chatmeup.data.db.firebase_db.repository.DatabaseRepository
 import com.android.chatmeup.data.db.firebase_db.repository.StorageRepository
 import com.android.chatmeup.data.db.room_db.ChatMeUpDatabase
-import com.android.chatmeup.data.db.room_db.data.MessageType
 import com.android.chatmeup.ui.CmuApp
 import com.android.chatmeup.ui.screens.chat.viewmodel.ChatViewModel
 import com.android.chatmeup.ui.screens.homescreen.viewmodel.HomeViewModel
 import com.android.chatmeup.ui.theme.ChatMeUpTheme
 import com.android.chatmeup.ui.theme.md_theme_dark_background
 import com.android.chatmeup.ui.theme.md_theme_light_background
-import com.android.chatmeup.util.firebaseMessageToRoomMessage
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -46,7 +43,6 @@ import timber.log.Timber
 import java.util.LinkedList
 import java.util.Queue
 import javax.inject.Inject
-import kotlin.text.Typography.dagger
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -166,65 +162,18 @@ class MainActivity : ComponentActivity() {
                         is Result.Error -> {
                             Timber.tag(tag).e("Error loading Message")
                         }
-
                         Result.Loading -> {}
                         is Result.Progress -> {}
                         is Result.Success -> {
                             result.data?.let {
-                                //Update room
-                                val message = firebaseMessageToRoomMessage(it)
-                                ioScope.launch {
-                                    //update message table
-                                    chatMeUpDatabase.messageDao.upsertMessage(message)
-                                    //update chat LastMessage
-                                    if (chatMeUpDatabase.chatDao.chatExists(message.chatID)) {
-                                        val chat =
-                                            chatMeUpDatabase.chatDao.getChat(message.chatID).apply {
-                                                no_of_unread_messages += 1
-                                                lastMessageText = message.messageText
-                                                lastMessageTime = message.messageTime
-                                                messageType = enumValueOf(message.messageType)
-                                                lastMessageSenderID = message.senderID
-                                            }
-                                        chatMeUpDatabase.chatDao.upsertChat(chat)
-                                    }
-                                }
+                                appTaskManager.addTaskToQueue(
+                                    AppTaskManager.Task.CreateNewRoomMessageFromFBMessage(this, it)
+                                )
+                                appTaskManager.addTaskToQueue(
+                                    AppTaskManager.Task.UpdateChatUsingLastFirebaseMessage(it)
+                                )
                                 //Delete from Firebase
                                 dbRepository.removeNewMessages(myUserId, it.messageID)
-
-                                //download Thumbnail
-                                if (message.messageType == MessageType.TEXT_IMAGE.toString()) {
-                                    val localFilePath =
-                                        "${message.chatID}/${message.messageID}_thumbnail.png"
-                                    message.serverThumbnailPath?.let { it1 ->
-                                        storageRepository.downloadChatThumbnail(
-                                            this.applicationContext,
-                                            it1,
-                                            localFilePath
-                                        ) { thumbnailResult ->
-                                            when (thumbnailResult) {
-                                                is Result.Error -> {}
-                                                Result.Loading -> {}
-                                                is Result.Progress -> {}
-                                                is Result.Success -> {
-                                                    ioScope.launch {
-                                                        val message1 =
-                                                            chatMeUpDatabase.messageDao.getMessage(
-                                                                message.messageID
-                                                            )
-                                                                .apply {
-                                                                    this.localThumbnailPath =
-                                                                        localFilePath
-                                                                }
-                                                        chatMeUpDatabase.messageDao.upsertMessage(
-                                                            message1
-                                                        )
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
                             }
                         }
                     }
