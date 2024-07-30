@@ -50,12 +50,6 @@ Model-View-ViewModel (MVVM)
    src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/7543e458-d751-4ada-bbff-cce76c3b2ca7">
 </p>
 
-
-### Firebase
-<p align = "left" >
-  <img width="613" alt="Screenshot 2023-07-02 at 19 24 20" src="https://github.com/VIPlearner/ChatMeUp/assets/63104739/2302609e-80e9-4b1f-ac01-f5c438dba588">
-</p>
-
 ## Setup
 #### Requirements
 * Basic knowledge about Android Studio
